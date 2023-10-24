@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Golden Lion Mail</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favico.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <header class="header">
+        <a class="wrapper" href="/">
+            <img class="img-logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Golden Lion Logo">
+            <div class="text">
+                <p>GOLDEN LION</p>
+                <p>MAIL</p>
+            </div>
+        </a>
+        <nav class="navbar">
+            <a class="active" href="/">HOME</a>
+            <a href="/about-us">ABOUT US</a>
+            <a class="btn-main" href="/main-program">START NOW</a>
+        </nav>
+    </header>
+
+
 
 </body>
 </html>
