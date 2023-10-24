@@ -40,14 +40,22 @@ body {
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
+    transition: all ease-in-out .3s;
 }
 
 .navbar a:not(:last-child):after {
-    color: #75C5FF;
+    content: "";
+    position: absolute;
+    background-color: #75C5FF;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
 }
 
-.navbar a:not(:last-child):hover {
-    color: #75C5FF;
+.navbar a:not(:last-child):hover:after {
+    width: 100%;
 }
 
 .navbar {
@@ -78,6 +86,7 @@ body {
 
 .wrapper {
     display: flex;
+    text-decoration: none;
 }
 
 .active {
