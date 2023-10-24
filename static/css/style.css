@@ -89,6 +89,6 @@ body {
     text-decoration: none;
 }
 
-.active {
-
+.navbar .active {
+    color: #75C5FF;
 }
